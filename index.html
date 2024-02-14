@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-12 ">
+    <header>
+
+    </header>
+    <main>
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- shape container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- triangle card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png"
+                            alt="Triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-medium text-center">Triangle</h2>
+                        <p class="text-center">Area(A) = 0.5 X Base X height </p>
+                        <div>
+                            <input id="triangle-base" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl mb-1" type="text" placeholder="base">
+                            <span>cm</span>
+                            <input id="triangle-height" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl" type="text" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl ">Area: <span id="tri-area-span"></span> <span>cm</span><sup>2</sup></p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateTriangle()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- rectangle card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png"
+                            alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-medium text-center">Rectangle</h2>
+                        <p class="text-center">Area(A) = lenght X width  </p>
+                        <div>
+                            <!-- rectangle width -->
+                            <input id="rectangle-width" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl mb-1" type="text" placeholder="width">
+                            <span>cm</span>
+                            <!-- rectangle length -->
+                            <input id="rectangle-length" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl" type="text" placeholder="lenght">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl ">Area: <span id="rec-area-span"></span> <span>cm</span><sup>2</sup></p>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculateRectangle()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- parallelogram card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- rhombus card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- pentagon card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- elipse card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- area calculator container -->
+            <div class=" border-2 border-gray-400 w-[237px] h-[437px]">
+                <h3 class="text-xl text-center p-4 underline">Area Calculator</h3>
+                
+            </div>
+        </div>
+    </main>
+    <script src="js/shape-calculator.js"></script>
+</body>
+
+</html>
