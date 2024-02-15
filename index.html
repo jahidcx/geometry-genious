@@ -63,19 +63,30 @@
                 </div>
                 <!-- parallelogram card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                    <figure><img src="images/parallelogram.png"
+                            alt="" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="text-2xl font-medium text-center">Rectangle</h2>
+                        <p class="text-center">Area(A) = base X height  </p>
+                        <div>
+                            <!-- parallelogram base -->
+                            <input id="parallelogram-base" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl mb-1" type="text" placeholder="base">
+                            <span>cm</span>
+                            <!--paralellogram height -->
+                            <input id="parallelogram-height" class="w-24 border-2 border-gray-300 p-1 rounded-md text-xl" type="text" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl ">Area: <span id="para-area-span"></span> <span>cm</span><sup>2</sup></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button onclick="calculateParallelogramArea() " class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- rhombus card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/rhombus.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -87,7 +98,7 @@
                 </div>
                 <!-- pentagon card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/pentagon.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -99,7 +110,7 @@
                 </div>
                 <!-- elipse card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/ellipse.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
@@ -118,6 +129,7 @@
         </div>
     </main>
     <script src="js/shape-calculator.js"></script>
+    <script src="js/parallelogram.js"></script>
 </body>
 
 </html>
